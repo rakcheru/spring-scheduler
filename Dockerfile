@@ -11,10 +11,10 @@ ENV PATH $PATH:$JAVA_HOME/bin
 
 WORKDIR /opt/tomcat/
 
-ADD /target/spring-scheduler.jar  /opt/tomcat/spring-scheduler.jar
+ADD /target/scheduler-1.0.jar  /opt/tomcat/scheduler-1.0.jar
 
 EXPOSE 80
 
 USER root
-CMD java -jar -Dserver.port=80  /opt/tomcat/spring-scheduler.jar
+CMD java $JAVA_OPTS -jar -Dserver.port=80  /opt/tomcat/scheduler-1.0.jar
 
