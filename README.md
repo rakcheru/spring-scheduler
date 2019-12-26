@@ -12,3 +12,5 @@ docker container run -p 8009:80 --rm  \
 -e app.scheduler.cron.every_3_months="0 0 0 1 0/4 ?" \
 -e app.scheduler.cron.every_30_minute="0 0/30 * * * ?" \
 spring-scheduler
+
+Happy coding!
