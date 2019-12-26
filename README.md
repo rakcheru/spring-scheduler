@@ -1,4 +1,4 @@
-Command to run container:
+Command to run container :
 ------------------------
 
 mvn clean install -DskipTests && \
