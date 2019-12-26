@@ -1,4 +1,5 @@
 Command to run container:
+------------------------
 
 mvn clean install -DskipTests && \
 docker build . -t spring-scheduler && \
